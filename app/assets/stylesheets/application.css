@@ -14,6 +14,16 @@ h1 {
   font-size: 23px;
 }
 
+h2 {
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+h3 {
+  font-weight: lighter; 
+  font-size: 20px;
+}
+
 p {
   color: #666;
   font-size: 15px;
@@ -52,6 +62,29 @@ ul.menu li a {
   padding: 30px 5%;
 }
 
+.big-box {
+  background: white;
+  border: 1px solid #d9dbde;
+  border-radius: 3px;
+  display: block;
+  padding:0;
+}
+
+.header {
+  background: #3A6171;
+  text-align: center;
+  color: white;
+  padding: 25px;
+  border-radius: 3px 3px 0 0;
+}
+
+.title {
+  font-size: 
+}
+
+.box-content {
+  padding: 20px;
+}
 
 
 
