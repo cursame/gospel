@@ -9,13 +9,13 @@ Rails.application.routes.draw do
 
   get 'trainer/follow_network'
 
-  get 'trainer/network'
+  get 'trainer/network', as: :institution
 
-  get 'trainer/admin'
+  get 'trainer/admin', as: :admin
 
-  get 'trainer/teacher'
+  get 'trainer/teacher', as: :teacher
 
-  get 'trainer/student'
+  get 'trainer/student', as: :student
 
 
 
