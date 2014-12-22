@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141222162913) do
+ActiveRecord::Schema.define(version: 20141222171156) do
 
   create_table "networks", force: true do |t|
     t.string   "token_network"
     t.string   "network_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "steap"
   end
 
   create_table "session_registers", force: true do |t|
