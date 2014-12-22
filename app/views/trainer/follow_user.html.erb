@@ -1,2 +1,5 @@
-<h1>Trainer#follow_user</h1>
-<p>Find me in app/views/trainer/follow_user.html.erb</p>
+<h1>Ingrsa como usuairo</h1>
+<%= form_tag("/trainer/follow") do -%>
+   <%= text_field_tag 'code', '', placeholder: 'Ingresa tu email'%>
+   <%= submit_tag 'Enviar email', :class => 'button' %>
+<%end%>

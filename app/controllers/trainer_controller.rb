@@ -41,6 +41,14 @@ class TrainerController < ApplicationController
      end
   end
 
+  def unfollow
+    session[:type] = nil
+    session[:identifier] = nil
+    session[:type_user] = nil
+    flash[:notice] = 'Gracias por usar el módulo de implementación de Cúrsame'
+    redirect_to root_path
+  end
+
 private
   def trainer_filter
     if session[:identifier] == nil

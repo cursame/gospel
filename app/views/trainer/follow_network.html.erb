@@ -1,2 +1,5 @@
-<h1>Trainer#follow_network</h1>
-<p>Find me in app/views/trainer/follow_network.html.erb</p>
+<h1>Ingresa tu código de implementación</h1>
+<%= form_tag("/trainer/follow") do -%>
+   <%= text_field_tag 'code', '', placeholder: 'Ingresa el código de institución'%>
+   <%= submit_tag 'Enviar Código', :class => 'button' %>
+<%end%>
