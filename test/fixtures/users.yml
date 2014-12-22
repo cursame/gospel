@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  role: MyString
+  network_name: MyString
+  type_network: MyString
+  loggin_first: MyString
+
+two:
+  email: MyString
+  role: MyString
+  network_name: MyString
+  type_network: MyString
+  loggin_first: MyString
