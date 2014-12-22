@@ -20,7 +20,13 @@ Rails.application.routes.draw do
   get 'trainer/teacher', as: :teacher
   get 'trainer/student', as: :student
 
+  ######## api #########
 
+  get 'create_user', to: 'register_api#create_user'
+  get 'create_network', to: 'register_api#create_network'
+  get 'register_session', to: 'register_api#register_session'
+  post 'create_user', to: 'register_api#create_user'
+  post 'create_network', to: 'register_api#create_network'
+  post 'register_session', to: 'register_api#register_session'
 
- 
 end
