@@ -1,3 +1,4 @@
+# encoding: utf-8
 class TrainerController < ApplicationController
   before_filter :trainer_filter, only: [:network, :admin, :teacher, :student]
   def follow_user
