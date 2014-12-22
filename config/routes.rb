@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ########## vistas principales ######
   root 'home#index'
   get 'home/index'
-  get 'home/newsletter'
+  get 'home/newsletter', as: :newsletter
 
   ######## herramientas de logueo ##########
 
