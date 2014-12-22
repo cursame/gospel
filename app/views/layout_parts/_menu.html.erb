@@ -1,7 +1,7 @@
 <% if session[:type] != nil %>
 <div class="menu-bar">
 	<ul class="menu">
-    <li><img src="..assets/img/main_logo.png" alt="">  </li>
+    <li><%= image_tag('main_logo.png')%></li>
 	    <% if session[:type] == 'network' %>
 		<li><%= link_to 'Institución', institution_path  %></li>
 		<% end %>
@@ -14,6 +14,8 @@
 		<% if session[:type_user] == 'student' %>
 		<li><%= link_to 'Alumno', student_path  %></li>
 		<%end%>
+	    <li><%= link_to 'Salir', exit_path  %></li>
+
 	</ul>
 </div>
 <%end%>

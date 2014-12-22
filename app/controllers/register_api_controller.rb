@@ -1,0 +1,3 @@
+class RegisterApiController < ApplicationController
+
+end
