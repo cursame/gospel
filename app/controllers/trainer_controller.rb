@@ -28,6 +28,8 @@ class TrainerController < ApplicationController
     else
       @to_validate = true
     end    
+
+
   end
 
   def teacher
@@ -73,6 +75,9 @@ class TrainerController < ApplicationController
   def update_steap
     @user = User.find(session[:identifier])
     @user.steap = params[:steap]
+    if @user.steap.to_i == params[:total_steaps].to_i
+      @user.finish_training = true
+    end
     @user.save
     @steap = params[:steap]
     @total_steaps = params[:total_steaps]
