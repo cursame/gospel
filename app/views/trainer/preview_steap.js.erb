@@ -1,0 +1,1 @@
+$("#steapsxputs").html('<%= escape_javascript(render(partial: "/trainer/steaps/#{session[:type_user]}/steap#{@steap}",  locals: {steap_to: @to_steap , steap_preview: @prev_steap , preview_active: @preview_validate, to_active: @to_validate, total_steaps: @total_steaps })) %>');

@@ -11,14 +11,115 @@ class TrainerController < ApplicationController
   end
 
   def admin
+    @user = User.find(session[:identifier])
+    @steap = @user.steap
+    @total_steaps = 6
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end    
   end
 
   def teacher
+    @user = User.find(session[:identifier])
+    @steap = @user.steap
+    @total_steaps = 7
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end   
   end
 
   def student
+    @user = User.find(session[:identifier])
+    @steap = @user.steap
+    @total_steaps = 7
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end    
   end
 
+  def update_steap
+    @user = User.find(session[:identifier])
+    @user.steap = params[:steap]
+    @user.save
+    @steap = params[:steap]
+    @total_steaps = params[:total_steaps]
+    
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end    
+
+    respond_to do |format|
+      format.js
+    end  
+  end
+  
+  def preview_steap
+    @steap = params[:steap]
+    @total_steaps = params[:total_steaps]
+
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end    
+
+    respond_to do |format|
+      format.js
+    end  
+  end
   def follow
      @user = User.find_by_email(params[:code])
      if @user.nil?

@@ -29,4 +29,10 @@ Rails.application.routes.draw do
   post 'create_network', to: 'register_api#create_network'
   post 'register_session', to: 'register_api#register_session'
 
+  ######## paginador ########
+
+  get 'next_steap', to: 'trainer#update_steap', as: :next_steap
+  get 'preview_steap', to: 'trainer#preview_steap', as: :preview_steap
+  post 'trainer/update_steap'
+
 end

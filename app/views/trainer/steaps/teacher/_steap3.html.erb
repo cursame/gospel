@@ -1,0 +1,48 @@
+<div id="admin_3_step">
+      <div class="header">
+        <div class="title">
+          Paso 3
+        </div>
+        <div class="subtitle">
+          <h3>Creación de cursos</h3>
+        </div>
+
+        <ul class="steps-box">
+          <li id="admin_1_checked" class="step_checked step1">
+            <p>1</p>
+          </li>
+          <li id="admin_2_checked" class="step_checked step2">
+            <p>2</p>
+          </li>
+          <li id="admin_3_checked" class="step_checked step3">
+            <p>3</p>
+          </li>
+          <li class="step step4">
+            <p>4</p>
+          </li>
+          <li class="step step5">
+            <p>5</p>
+          </li>
+          <li class="step step6">
+            <p>6</p>
+          </li>
+          <li class="step step7">
+            <p>7</p>
+          </li>
+        </ul>
+      </div>
+      <div class="box-content">
+        <p>
+          Para crear un curso deberemos seleccionar de la barra de herramientas la opción de “Cursos”
+          y hacer click en el botón de la esquina superior derecha “+ Nuevo”.
+
+          Cúrsame toma su nombre de los “Cursos” o “Asignaturas” que vemos en las escuelas. Sabemos que hay maestros que tienen más de 3 grupos y que dan más de 2 clases. Es por ello que Cúrsame facilita el trabajo de los maestros al poder crear los cursos que le maestro quiera, asignarles fechas de inicio y finalización, también elegir su privacidad y el esquema de evaluación. 
+        </p>
+        <div class="img_tutorial">
+         <%= link_to image_tag('img_t3.png')%>
+         </div>
+      </div>
+      <div class="pagination">
+        <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+      </div>
+    </div>

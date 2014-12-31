@@ -1,0 +1,47 @@
+<div id="admin_3_step">
+      <div class="header">
+        <div class="title">
+          Paso 3
+        </div>
+        <div class="subtitle">
+          <h3>Estadísticas</h3>
+        </div>
+
+        <ul class="steps-box">
+          <li id="admin_1_checked" class="step_checked step1">
+            <p>1</p>
+          </li>
+          <li id="admin_2_checked" class="step_checked step2">
+            <p>2</p>
+          </li>
+          <li id="admin_3_checked" class="step_checked step3">
+            <p>3</p>
+          </li>
+          <li class="step step4">
+            <p>4</p>
+          </li>
+          <li class="step step5">
+            <p>5</p>
+          </li>
+          <li class="step step6">
+            <p>6</p>
+          </li>
+        </ul>
+      </div>
+      <div class="box-content">
+        <p>
+          En la pantalla de inicio, encontraremos en el menú del engrane una
+opción que solo se encontrará cuando nuestra cuenta sea activdad
+como “Administrador”
+Para ingresar al perfil de administrador sólo deberemos hacer click en
+donde dice “Administración"
+        </p>
+        <div class="img_tutorial">
+         <%= image_tag('img_adm3.png')%>
+         </div>
+      </div>
+      <div class="pagination">
+        <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+
+      </div>
+    </div>

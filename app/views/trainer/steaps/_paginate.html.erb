@@ -1,0 +1,12 @@
+<% case preview_active %>
+	<% when   false %>
+	<span><%= link_to 'Previo', "#", class: 'btn_pag_null', remote: true %></span>
+	<% when   true %>
+	<span><%= link_to 'Previo', preview_steap_path(steap: steap_preview, total_steaps: total_steaps), class: 'btn_pag', remote: true %></span>
+<%end%>
+<% case to_active %>
+	<% when  true %>
+	<span><%= link_to 'Siguiente', next_steap_path(steap: steap_to, total_steaps: total_steaps ), class: "btn_pag", remote: true %></span>
+	<% when  false %>
+	<span><%= link_to 'Siguiente', "#", class: "btn_pag_null", remote: true %></span>
+<%end%>
