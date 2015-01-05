@@ -1,17 +1,21 @@
 <div class="menu-bar">
 	<ul class="menu">
-    <li class="logo"><%= link_to image_tag('main_logo.png'), root_path%></li>
-		<% if session[:type] != nil %>
-	  <% if session[:type] == 'network' %>
-		<li><%= link_to 'Institución', institution_path  %></li>
-		<% end %>
-		<% if session[:type_user] == 'admin' %>
-		<li><%= link_to 'Admin', admin_path %></li>
-		<%end%>
-		<% if session[:type_user] == 'teacher' %>
-		<li><%= link_to 'Profesor', teacher_path %></li>
-		<%end%>
-		<% if session[:type_user] == 'student' %>
+    <li class="logo">
+    	<%= link_to image_tag('main_logo.png'), root_path%></li>
+			<% if session[:type] != nil %>
+		  <% if session[:type] == 'network' %>
+		<li>
+			<%= link_to 'Institución', institution_path  %></li>
+			<% end %>
+			<% if session[:type_user] == 'admin' %>
+		<li>
+			<%= link_to 'Admin', admin_path %></li>
+			<%end%>
+			<% if session[:type_user] == 'teacher' %>
+		<li>
+			<%= link_to 'Profesor', teacher_path %></li>
+			<%end%>
+			<% if session[:type_user] == 'student' %>
 		<li><%= link_to 'Alumno', student_path  %></li>
 		<%end%>
 	    <li><%= link_to 'Salir', exit_path  %></li>
