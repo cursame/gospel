@@ -17,11 +17,12 @@
 		<%end%>
 	    <li><%= link_to 'Salir', exit_path  %></li>
 	<%else%>
-	     <li><%= link_to 'Soy usuario', '/trainer/follow_user' %></li>
-         <li><%= link_to 'Soy institución', '/trainer/follow_network' %></li>
+	     <div id="menu">
+	     <li><%= link_to 'Soy usuario', '/trainer/follow_user', remote: true %></li>
+         <li><%= link_to 'Soy institución', '/trainer/follow_network' , remote: true %></li>
          <li><%= link_to 'Gaceta de Cúrsame', newsletter_path %></li>
-
+         </div>
 <%end%>
 </ul>
-
+  <div id="menuload"></div>
 </div>

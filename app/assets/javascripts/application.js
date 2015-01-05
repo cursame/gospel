@@ -17,7 +17,9 @@
 
 //notification
 $(document).ready(function(){
+
    if ($('.notice')){
    	setTimeout(function(){ $('.notice').hide(); }, 3000);
    }
 });
+
