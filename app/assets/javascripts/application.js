@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+//notification
+$(document).ready(function(){
+   if ($('.notice')){
+   	setTimeout(function(){ $('.notice').hide(); }, 3000);
+   }
+});
