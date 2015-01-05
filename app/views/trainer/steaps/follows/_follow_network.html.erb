@@ -1,9 +1,24 @@
-<div class="content_login">
-<div class="content">
-<h1>Ingresa tu código de implementación</h1>
-<%= form_tag("/trainer/follow") do -%>
-   <%= text_field_tag 'code', '', placeholder: 'Ingresa el código de institución'%>
-   <%= submit_tag 'Enviar Código', :class => 'button' %>
-<%end%>
-  <div onclick="celarMenu();" >Cancelar</div>
-</div>
+<ul class="menu">
+<li>
+  <h2>Ingresa tu código de implementación</h2>
+</li>
+  <%= form_tag("/trainer/follow") do -%>
+  <li>  
+<li>
+
+
+  <div class="data">
+    <div class="input">
+      <%= text_field_tag 'code', '', placeholder: 'Código de institución', class:'uno'%>    </div>
+    <div class="submit">
+      <%= submit_tag 'Enviar Código', :class => 'button' %>
+    </div>
+    <%end%>
+  </div>
+</li>
+
+  <div onclick="celarMenu();" class="cancel">
+    Cancelar
+  </div>
+</ul>
+
