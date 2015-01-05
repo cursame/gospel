@@ -9,7 +9,7 @@ body {
   text-align:left;
   border-collapse:collapse;
   font-family: sans-serif;
-  background: #EDEEF1;
+  background: #f4f4f4;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h3 {
 }
 
 p {
-  color: #666;
+  color: #323232;
   font-size: 16px;
 }
 
@@ -35,11 +35,19 @@ a {
   text-decoration: none;
 }
 
+.content_login {
+  position: relative;
+  left: 20%;
+  width: 70%;
+  padding: 50px 5% 30px 5%;
+  height: 100%;
+}
+
 input.uno{
-  padding: 8px 0;
+  padding: 8px 5px;
   font-size: 15px;
-  width: 28%;
   border-radius: 3px;
+  margin-right: 35px;
 }
 
 .menu-bar {
@@ -188,10 +196,11 @@ ul.steps-box li.step_checked p {
 }
 
 .submit {
-    float: left;
+  float: left;
 }
 
 .button {
+  text-align: center;
   display: block;
   background: #3D99BE;
   padding: 10px 35px;
@@ -199,8 +208,32 @@ ul.steps-box li.step_checked p {
   border-radius: 3px;
   color: white;
   font-size: 15px;
+  cursor: pointer;;
 }
 
+:hover.button {
+  background: #287391;
+}
+
+.buttons_space {
+  margin:55px 29%;
+}
+
+.btn-download {
+  display: block;
+  background: #2DB0A6;
+  border: 1pt #3C7F84 solid;
+  padding: 18px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+:hover.btn-download {
+  display: block;
+  background: #367D8E;
+}
 
 .pagination {
   text-align: center;
@@ -233,4 +266,3 @@ ul.steps-box li.step_checked p {
   float: left; 
   margin: 0 5px;
 }
-

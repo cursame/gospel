@@ -1,11 +1,10 @@
-<div class="content">
+<div class="content_login">
   <h2>Ingresa como usuario</h2>
   <%= form_tag("/trainer/follow") do -%>
     <div class="data">
       <div class="input">
-         <%= text_field_tag 'code', '', placeholder: 'Ingresa tu email', class:'uno', style: 'width:200px !important;'%>
+        <%= text_field_tag 'code', '', placeholder: 'Ingresa tu email', class:'uno'%>
       </div>
-
       <div class="submit">
          <%= submit_tag 'Enviar email', :class => 'button' %>
       </div>
