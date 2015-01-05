@@ -1,9 +1,9 @@
-<div class="bg-color">
-<div class="content">
-  <h1>Ingresa tu código de implementación</h1>
-  <%= form_tag("/trainer/follow") do -%>
-    <%= text_field_tag 'code', '', placeholder: 'Ingresa el código de institución', class:'uno'%>
-    <%= submit_tag 'Enviar Código', :class => 'button' %>
-  <%end%>
-</div>
+<div class="content_login">
+  <div class="content">
+    <h1>Ingresa tu código de implementación</h1>
+    <%= form_tag("/trainer/follow") do -%>
+      <%= text_field_tag 'code', '', placeholder: 'Ingresa el código de institución', class:'uno'%>
+      <%= submit_tag 'Enviar Código', :class => 'button' %>
+    <%end%>
+  </div>
 </div>
