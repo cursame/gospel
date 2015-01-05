@@ -2,9 +2,15 @@
 class TrainerController < ApplicationController
   before_filter :trainer_filter, only: [:network, :admin, :teacher, :student]
   def follow_user
+    respond_to do |format|
+      format.js
+    end
   end
 
   def follow_network
+    respond_to do |format|
+      format.js
+    end
   end
 
   def network
