@@ -4,7 +4,7 @@
       Paso 6
     </div>
     <div class="subtitle">
-      <h3>Evaluación final</h3>
+      <h3>Barra de Recordatorios</h3>
     </div>
     <ul class="steps-box">
       <li id="admin_1_checked" class="step_checked step1">
@@ -32,16 +32,19 @@
   </div>
   <div class="box-content">
     <p>
-    Para poder trabajar con las calificaciones finales de los alumnos deberemos comenzar seleccionado el curso de mi listado de cursos ubicado en la esquina superior izquierda.
-    Una vez adentro nos situamos en la parte del engrane y seleccionamos la opción “Calificaciones finales”
-    Después seleccionamos el alumno a evaluar y llenamos la información que nos solicita Cúrsame para arrojar una calificación final. Si llegara a haber actividades sin calificar, esta parte de la plataforma nos indicaría cuales son esas actividades.
+      Cúrsame integra una barra de recorcatorios que se encontrará en
+      la parte derecha de la pantalla. Esta barra es muy importante ya
+      que le permite, tanto al maestro como al alumno, estar al tanto de
+      las actividades que tenga pendientes por contestar. 
+    </p>
+    <p>
+      La barra toma la información de las actividades pendientes de los próximos 3 días y nos despliega la información de estas actividades.
     </p>
     <div class="img_tutorial">
-      <%= link_to image_tag('img_t9.png')%>
-      <%= link_to image_tag('img_t10.png')%>
+      <%= link_to image_tag('img_al9.png')%>
     </div>
   </div>
   <div class="pagination">
-<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+  <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
   </div>
 </div>

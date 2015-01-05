@@ -3,6 +3,7 @@
   <p>Para comenzar a utilizar su perfil de administrador, deberá seguir los siguientes pasos. Le recordamos que esto es solamente una breve guía y tendrá disponible en cualquier momento manuales más específicos en la sección de descargas.
   </p>
 
-  <div class="big-box" id="steapsxputs"><%=render partial: "/trainer/steaps/#{session[:type_user]}/steap#{@steap}", locals: {steap_to: @to_steap , steap_preview: @prev_steap , preview_active: @preview_validate, to_active: @to_validate, total_steaps: @total_steaps }%></div>
-
+  <div class="big-box" id="steapsxputs">
+  <%=render partial: "/trainer/steaps/#{session[:type_user]}/steap#{@steap}", locals: {steap_to: @to_steap , steap_preview: @prev_steap , preview_active: @preview_validate, to_active: @to_validate, total_steaps: @total_steaps }%>
+  </div>
 </div>
