@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141231045121) do
+ActiveRecord::Schema.define(version: 20150106163817) do
 
   create_table "networks", force: true do |t|
     t.string   "token_network"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20141231045121) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "steap"
+    t.boolean  "finish_training"
   end
 
   create_table "session_registers", force: true do |t|

@@ -14,6 +14,23 @@ class TrainerController < ApplicationController
   end
 
   def network
+    @user = Network.find(session[:identifier])
+    @steap = @user.steap
+    @total_steaps = 7
+    @prev_steap = @steap.to_i - 1
+    @to_steap = @steap.to_i + 1
+
+    if @prev_steap == 0
+      @preview_validate = false
+    else
+      @preview_validate = true
+    end
+
+    if @to_steap > @total_steaps.to_i
+      @to_validate = false
+    else
+      @to_validate = true
+    end 
   end
 
   def admin
@@ -79,7 +96,12 @@ class TrainerController < ApplicationController
   end
 
   def update_steap
+    if session[:type] == 'user'
     @user = User.find(session[:identifier])
+    else
+    @user = Network.find(session[:identifier])
+    end
+
     @user.steap = params[:steap]
     if @user.steap.to_i == params[:total_steaps].to_i
       @user.finish_training = true
