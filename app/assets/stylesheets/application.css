@@ -73,7 +73,6 @@ ul li {
   list-style: none;
   line-height: 30px;
   width: 100%;
-  float: left;
 }
 
 ul li.button {
@@ -137,7 +136,7 @@ ul.steps-box {
   width: 90%;
   position: absolute;
   bottom: -22%;
-  text-align: center;
+  text-align: center !important;
   padding: 0;
   margin: 0;
 }
@@ -174,7 +173,7 @@ ul.steps-box li.step_checked p {
 
 .step {
   width: 20px;
-  display: block;
+  display: block ;
   border-radius: 3px;
   border: 1px #CCC solid;
   padding: 0 12px;
@@ -184,7 +183,7 @@ ul.steps-box li.step_checked p {
 
 .step_checked {
   width: 20px;
-  display: block;
+  display: block ;
   color: rgb(215,215,215);
   border-radius: 3px;
   border: 1px #CCC solid;
