@@ -1,0 +1,13 @@
+<h1>Paso 2</h1>
+<p> Primero te recomendamos como directivo  establece las fechas de implementación para tu equipo. Necesitamos que nos mandes la base de datos de profesores y alumnos a la bervedad, tomando en cuenta que solamente son siete días de plazo para este punto, te hacemos entrega del formato para base de datos CSV (se abre en exel), que te permitirá solicitar la información de tus usuarios por roles "profesor(teacher) y alumno(student)".</p>
+
+<p>Como recomendación te pedimos que levantes la base de datos por turno en una misma hora para que los alumnos no esten repetidos, en el caso de los maestros puedes acudir a cada uno de ellos para que te den sus datos.</p>
+<p>
+<%= link_to 'Descargar formato de base de datos para usuarios', '/formato_usuarios.csv', target: '_blank'%>
+</p>
+
+<p>Una vez lleno digitalizalo y envialo a bd@cursa.me</p>
+
+<div class="pagination">
+    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+</div>
