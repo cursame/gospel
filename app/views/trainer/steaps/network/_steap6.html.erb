@@ -30,7 +30,7 @@
 	<div class="box-content">
 		<p>¡Felicidades! Tu plantel está listo para comenzar a disfrutar de los beneficios de la plataforma educativa Cúrsame. </p>
 		<p>Toda la información que encontraste en este sistema de implementación automatizada podrá ser consultada cuantas veces sea necesario siempre que lo necesites.</p>
-		Además contamos con el servicio de soporte en línea con horario de 10 am a 6 pm en esta dirección <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %> y en los teléfonos 63855560
+		Además contamos con el servicio de soporte en línea con horario de 10 am a 6 pm en esta dirección <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %> y en los teléfonos <a href="tel:63855560"> Tel:63855560 </a>
 		<div class="pagination">
 			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
 		</div>
