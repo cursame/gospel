@@ -1,14 +1,54 @@
-<h1>Paso 3</h1>
-<p> Debes fijar fechas con horarios para que los maestros tomen la implementación que tu has preparado,
-dependiendo de la cantidad de maestros se deberán establecer los horarios para las implementaciones.</p>
-<p> Nosotros te proporcionamos un video introductorio para que puedas llevar a cabo un implementación exitosa.</p>
-
-<p>En caso de necesitar una implementación virtual con uno de nuestros implementadores contactar a implementacion@cursa.me, para establecer las fechas y condiciones para la implementación virtual.</p>
-<center>
-<iframe width="760" height="515" src="http://www.youtube.com/embed/hRXdl0MHKoY" frameborder="0" allowfullscreen></iframe>
-</center>
-<div class="pagination">
-    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+<div id="netwrok_3_step">
+	<div class="header">
+		<div class="title">
+			Paso 3
+		</div>
+		<div class="subtitle">
+			<h3>Implementación a Profesores </h3>
+		</div>
+		<ul class="steps-box">
+			<li id="admin_1_checked" class="step_checked step1">
+				<p>1</p>
+			</li>
+			<li id="admin_2_checked" class="step_checked step2">
+				<p>2</p>
+			</li>
+			<li id="admin_3_checked" class="step_checked step3">
+				<p>3</p>
+			</li>
+			<li class="step step4">
+				<p>4</p>
+			</li>
+			<li class="step step5">
+				<p>5</p>
+			</li>
+			<li class="step step6">
+				<p>6</p>
+			</li>
+		</ul>
+	</div>
+	<div class="box-content">
+		<h1>Dias 2 y 3</h1>
+		<p>Será necesario asignar las fechas de implementación para los docentes. </p>
+		<p>Nosotros proponemos de acuerdo a la cantidad de docentes, que se asignen 2 fechas en días consecutivos, mismos que se dividirán en sesiones de capacitación con duración aproximada de 50 minutos por sesión. Es importante que se realicen cuantas sesiones sean necesarias de acuerdo al cupo del aula de cómputo en la que se llevará a cabo la implementación con el fin de que todos los profesores queden cubiertos en las fechas asignadas.</p>
+		<p>El programa sugerido para las sesiones de implementación es el siguiente:</p>
+		<b>Bienvenida a profesores:</b>
+		<p>Proporcionamos un flyer que podrá ser descargado y replicado para los profesores, es un importante material de apoyo para la sesión. (DESCARGA DEL FLYER)</p>
+		<b>Introducción:</b>
+		<p>En esta sección verán un video introductorio de Cúrsame que tiene una duración de 1.57 minutos
+		(VIDEO EMBED) (LINK AL VIDEO EN VIMEO) (DESCARGA DEL VIDEO)
+		<center>
+		<iframe width="760" height="515" src="http://www.youtube.com/embed/hRXdl0MHKoY" frameborder="0" allowfullscreen></iframe>
+		</center>
+		<b>Sesión Interactiva:</b>
+		<p>Al terminar el video introductorio aprovechando el aula de cómputo cada profesor llevará a cabo frente a la computadora un ejercicio tutorial que consta de 8 pasos y que le permitirá familiarizarse con sus herramientas de trabajo en Cúrsame.  </p>
+		<p>En caso de no contar con aula de cómputo con internet o no haya computadoras disponibles se deberá proporcionar a los profesores el link URL del tutorial para que lo realicen posteriormente en sus domicilios o café internet.
+		(LINK DEL TUTORIAL)</p>
+		<b>Reconocimiento de conclusión de la capacitación en Cúrsame:</b>
+		<p>Una vez que el profesor termina la sesión interactiva de implementación se habilita una opción para solicitar a Cúrsame un diploma como profesor calificado para el uso de nuestra plataforma educativa. Este diploma será personalizado y firmado por el CEO de Cúrsame, se le hará llegar de manera digitalizada a la cuenta de correo electrónico especificada al momento de inscripción a Cúrsame.</p>
+		<p>Las autoridades escolares pueden solicitar una implementación remota con uno de nuestros agentes, para ello deberán escribir al correo <%= mail_to "implementaciones@cursa.me" %>” con el fin de  establecer fechas y condiciones ya que se considera un servicio extra al paquete estándar de Cúrsame. </p>
+		<div class="pagination">
+			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+		</div>
+	</div>
 </div>
-
-

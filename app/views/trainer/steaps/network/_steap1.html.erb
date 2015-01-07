@@ -1,12 +1,49 @@
-<h1>Paso 1</h1>
-
-<p>Hola, para este momento tu plataforma de Cúrsmae ha sido dada de alta según previo acuerdo, este pequeño tutorial te ayudará a generar de una manerá más eficaz y dinámica la implementación de Cúrsame en tu institución.</p>
-
-<p>
-En este punto ya se presentó Cúrsame, se revisó el acuerdo con la fijación de los 5 días para obtener la base de datos.
-</p>
-<p>Como en Cúrsame nuestra misión es apoyarte en lo que te sea necesario para lograr la mejora una mejora educativa significativa dentro de tu institución te brindamos el material de apoyo necesario para que puedas implementar tu institución en tiempo record, lo único que tienes que hacer es seguir los pasos al pie de la letra.</p>
-
-<div class="pagination">
-    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+<div id="network_1_step">
+	<div class="header">
+		<div class="title">
+			Paso 1
+		</div>
+		<div class="subtitle">
+			<h3>Bienvenido a Cúrsame</h3>
+		</div>
+		<ul class="steps-box">
+			<li id="admin_1_checked" class="step_checked step1">
+				<p>1</p>
+			</li>
+			<li class="step step2">
+				<p>2</p>
+			</li>
+			<li class="step step3">
+				<p>3</p>
+			</li>
+			<li class="step step4">
+				<p>4</p>
+			</li>
+			<li class="step step5">
+				<p>5</p>
+			</li>
+			<li class="step step6">
+				<p>6</p>
+			</li>
+		</ul>
+	</div>
+	<div class="box-content">
+		<h1>Introducción</h1>
+		<p>¡Hola!</p>
+		<p>Te damos la más cordial bienvenida a este portal con el cual lograremos juntos realizar una implementación de Cúrsame exitosa en los tiempos acordados.</p>
+		<p>Esta sección está diseñada para las autoridades escolares y les dará una guía detallada de los requerimientos y recomendaciones  para generar de una manera más eficaz y dinámica la implementación de Cúrsame en la institución. </p>
+		<p>El objetivo de una implementación es integrar a los maestros y alumnos a Cúrsame para que conozcan los beneficios de contar con una herramienta educativa de calidad.</p>
+		<p>Los requerimientos ideales para ello son:</p>
+		<ul>
+			<li>- Proyector</li>
+			<li>- Aula de cómputo con internet </li>
+			<li>- Base de datos de maestros </li>
+		</ul>
+		<p>En el supuesto de que el plantel no cuente con la infraestructura antes mencionada, en los siguientes pasos daremos opciones y material de apoyo para solventar la implementación.</p>
+		<p>Es muy importante para Cúrsame apoyar a las instituciones en todo el proceso , queremos que comiencen a beneficiarse de nuestra plataforma  en el menor tiempo posible y para ellos solamente se deberán seguir los siguientes pasos al pie de la letra.</p>
+		<p>¡Estamos listos para comenzar! </p>
+		<div class="pagination">
+			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+		</div>
+	</div>
 </div>

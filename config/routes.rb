@@ -35,4 +35,12 @@ Rails.application.routes.draw do
   get 'preview_steap', to: 'trainer#preview_steap', as: :preview_steap
   post 'trainer/update_steap'
 
+  ######## admin ########
+
+  get 'analitics', to: 'admin#analitics', as: :analitics
+  get 'logginadmin', to: 'admin#capacite', as: :logginadmin
+  post 'logginadmin', to: 'admin#capacite'
+  get 'loggin', to: 'admin#loggin'
+
+
 end

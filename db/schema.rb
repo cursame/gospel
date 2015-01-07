@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150106163817) do
+ActiveRecord::Schema.define(version: 20150107164420) do
 
   create_table "networks", force: true do |t|
     t.string   "token_network"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150106163817) do
     t.datetime "updated_at"
     t.integer  "steap"
     t.boolean  "finish_training"
+    t.string   "subdomain",       default: "demo"
   end
 
   create_table "session_registers", force: true do |t|

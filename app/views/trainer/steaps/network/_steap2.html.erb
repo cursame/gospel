@@ -1,13 +1,50 @@
-<h1>Paso 2</h1>
-<p> Primero te recomendamos como directivo  establece las fechas de implementación para tu equipo. Necesitamos que nos mandes la base de datos de profesores y alumnos a la bervedad, tomando en cuenta que solamente son siete días de plazo para este punto, te hacemos entrega del formato para base de datos CSV (se abre en exel), que te permitirá solicitar la información de tus usuarios por roles "profesor(teacher) y alumno(student)".</p>
-
-<p>Como recomendación te pedimos que levantes la base de datos por turno en una misma hora para que los alumnos no esten repetidos, en el caso de los maestros puedes acudir a cada uno de ellos para que te den sus datos.</p>
-<p>
-<%= link_to 'Descargar formato de base de datos para usuarios', '/formato_usuarios.csv', target: '_blank'%>
-</p>
-
-<p>Una vez lleno digitalizalo y envialo a bd@cursa.me</p>
-
-<div class="pagination">
-    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+<div id="netwrok_2_step">
+	<div class="header">
+		<div class="title">
+			Paso 2
+		</div>
+		<div class="subtitle">
+			<h3>Base de Datos de profesores </h3>
+		</div>
+		<ul class="steps-box">
+			<li id="admin_1_checked" class="step_checked step1">
+				<p>1</p>
+			</li>
+			<li id="admin_2_checked" class="step_checked step2">
+				<p>2</p>
+			</li>
+			<li class="step step3">
+				<p>3</p>
+			</li>
+			<li class="step step4">
+				<p>4</p>
+			</li>
+			<li class="step step5">
+				<p>5</p>
+			</li>
+			<li class="step step6">
+				<p>6</p>
+			</li>
+		</ul>
+	</div>
+	<div class="box-content">
+		<h1>Día 1</h1>
+		<p>Previamente hemos solicitado a las autoridades del plantel la Base de Datos de profesores de ambos turnos (en caso de que aplique) con el formato específico que Cúrsame necesita. 
+		</p>
+		<center><%= image_tag('profesores_ejemplo.png')%></center>
+		<p>En caso de que el plantel no cuente con la Base de Datos, en esta sección podrán ser descargados los formatos ejemplo descargables para que hagan uso de ellos y completen el requisito.  </p>
+		<p>Una vez que la Institución cuente con la Base de Datos completa y con los datos correctos, deberá ser enviada al correo <%= mail_to "bd@cursa.me" %>  con el asunto “Base de Datos del Plantel Educativo <%=  "#{@user.network_name}"%>.”  con el fin de que Cúrsame habilite las cuentas de usuario para los profesores del plantel.</p>
+		<p>En cuanto las cuentas estén creadas los profesores recibirán un correo de confirmación en la cuenta que hayan especificado en el formato de Base de Datos, este correo les permitirá activar su cuenta de manera exitosa.</p>
+		<b>Profesores faltantes: </b>
+		<p>Siempre existirán caso en los que por diferentes razones un profesor no cuenta con usuario de Cúrsame ya que no llenó el formato de Base de Datos de Alumnos. Para que no pierda los beneficios del uso de nuestra plataforma el registro de profesores está habilitado de manera permanente en el sitio Cúrsame del plantel en la siguiente direccion URL <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %>.</p>
+		<p>También está habilitado desde la sección de administración de la plataforma para las autoridades la creación de nuevas cuentas para alumnos.</p>
+		<div class="buttons_space">
+			<%= link_to '(Descarga formato XLSX)', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button  btn-download" %>
+			<%= link_to '(Descarga formato  PDF)', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "button  btn-download" %>
+		</div>
+		</p>
+		<div class="pagination">
+			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+		</div>
+	</div>
 </div>

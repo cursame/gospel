@@ -1,5 +1,38 @@
-<h1>Paso 6</h1>
-<p>Alumnos toman capacitación</p>
-<div class="pagination">
-    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+<div id="netwrok_5_step">
+	<div class="header">
+		<div class="title">
+			Paso 6
+		</div>
+		<div class="subtitle">
+			<h3>Has finalizado  </h3>
+		</div>
+		<ul class="steps-box">
+			<li id="admin_1_checked" class="step_checked step1">
+				<p>1</p>
+			</li>
+			<li id="admin_2_checked" class="step_checked step2">
+				<p>2</p>
+			</li>
+			<li id="admin_3_checked" class="step_checked step3">
+				<p>3</p>
+			</li>
+			<li  id="admin_4_checked" class="step_checked step4">
+				<p>4</p>
+			</li>
+			<li  id="admin_5_checked" class="step_checked step4">
+				<p>5</p>
+			</li>
+			<li class="step_checked step6">
+				<p>6</p>
+			</li>
+		</ul>
+	</div>
+	<div class="box-content">
+		<p>¡Felicidades! Tu plantel está listo para comenzar a disfrutar de los beneficios de la plataforma educativa Cúrsame. </p>
+		<p>Toda la información que encontraste en este sistema de implementación automatizada podrá ser consultada cuantas veces sea necesario siempre que lo necesites.</p>
+		Además contamos con el servicio de soporte en línea con horario de 10 am a 6 pm en esta dirección <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %> y en los teléfonos 63855560
+		<div class="pagination">
+			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+		</div>
+	</div>
 </div>
