@@ -1,0 +1,24 @@
+<div class="content">
+<h1>Usuarios</h1>
+<%= link_to new_admin_path do %>
+<div class="button">Nuevo Admin</div>
+<%end%>
+<table>
+	<thead>
+		<tr>
+			<th>Email</th>
+			<th>Creado</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+	    <% @admin.each do |a|%>
+	    <tr>
+				<td><%= a.email%></td>
+				<td><%= a.created_at%></td>
+				<td><%= link_to 'Eliminar', destroy_admin_path(id: a.id)%></td>
+		</tr>
+	    <%end%>
+	</tbody>
+</table>
+</div>

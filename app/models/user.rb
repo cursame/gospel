@@ -4,6 +4,18 @@ class User < ActiveRecord::Base
 		self.steap = 1
 		self.save
 	end
+	def acomplishment_steaps
+		case self.role 
+		when 'student'
+			@s = 7
+		when 'teacher'
+			@s = 6
+		when 'admin'
+			@s = 7
+		end
+			@c = (self.steap.to_f/@s.to_f)*100
+			@c.to_i
+	end
 
 
 end

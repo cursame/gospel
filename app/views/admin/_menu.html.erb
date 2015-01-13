@@ -1,0 +1,19 @@
+<div class="menu-bar">
+	<ul class="menu">
+		<li class="logo">
+			<%= link_to image_tag('main_logo.png'), analitics_path%>
+		</li>
+		<div id="menu">
+			<% if session[:admin] != nil %>
+			<li><%= link_to 'Inicio', analitics_path %></li>
+			<li><%= link_to 'Panel de adminsitradores', view_admins_path %></li>
+			<li><%= link_to 'Usuarios', users_path%></li>
+			<li><%= link_to 'Redes', networks_path %></li>
+			<li><%= link_to 'Salir', session_destroy_path %></li>
+			<%else%>
+			<li><%= link_to 'Volver al inicio', root_path %></li>
+			<%end%>
+		</div>
+	</ul>
+	<div id="menuload"></div>
+</div>

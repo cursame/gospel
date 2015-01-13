@@ -1,0 +1,35 @@
+<div class="content">
+	<h1>Redes</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Steaps</th>
+				<th>Progress</th>
+				<th>Token de implementación</th>
+				<th>URL</th>
+				<th>Users acomplishment</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @networks.each do |network|%>
+			<tr>
+				<td><%= network.network_name %></td>
+
+				<td>
+				 <%= "Paso  #{network.steap}" if network.finish_training != true %>
+				 <%= "Finalizado" if network.finish_training == true %>
+				</td>
+
+				<td>
+				 <progress max="100" value="<%= network.acomplishment_steaps%>" ></progress> <%= network.acomplishment_steaps.to_i%>% 
+				</td>
+				<td><%= network.token_network%></td>
+				<td><%= network.subdomain%></td>
+				<td><progress max="100" value="<%= network.acomplishment_prom%>" ></progress> <%= network.acomplishment_prom%>%</td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<%= will_paginate @networks %>
+</div>
