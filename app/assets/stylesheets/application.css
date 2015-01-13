@@ -40,6 +40,7 @@ p {
 
 a {
   text-decoration: none;
+  color: rgba(51,174,219,1);
 }
 
 .content_login {
@@ -192,6 +193,53 @@ ul.steps-box li.step_checked p {
   background: rgb(51,174,219);
 }
 
+ul.space_buttons{
+  width: 90%;
+  text-align: center !important;
+  padding: 0;
+  margin: 0;
+}
+
+ul.space_buttons li.button {
+  display: inline-block;
+  list-style: none;
+  margin-left: 5%;
+  text-align: center;
+  width: auto;
+  font-weight: bold;
+}
+
+ul.space_buttons li.button a {
+  display: block;
+  text-decoration: none; 
+  font-size: 15px;
+  color: rgb(255,255,255);
+  line-height: 10px;
+  padding: 18px;
+  background: #287391;
+  border-radius: 3px;
+  border: 1px solid #198BAD;
+}
+
+
+
+.btn-download2 {
+  text-align: center;
+  display: block;
+  background: #109CC5;
+  border: 1pt #2677B2 solid;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+:hover.btn-download {
+  display: block;
+  background: #0E69A1;
+  border-radius: 3px;
+}
+
 .notice {
   position: absolute;
   left: 20%;
@@ -218,48 +266,17 @@ ul.steps-box li.step_checked p {
   width: 100%;
 }
 
-.button {
-  text-align: center;
-  display: block;
-  background: rgba(255,255,255,0.2);
-  padding: 10px 0;
-  border: 1pt #ececec solid;
-  border-radius: 3px;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  width: 90%;
-}
-
-:hover.button {
-  background: #287391;
-}
 
 .buttons_space {
-  margin:55px 29%;
+  margin:55px 5px;
 }
 
-.btn-download {
-  display: block;
-  background: #2DB0A6;
-  border: 1pt #3C7F84 solid;
-  padding: 18px 0;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-:hover.btn-download {
-  display: block;
-  background: #367D8E;
-}
 
 .pagination {
   text-align: center;
   width: auto;
   background: none;
-  padding: 10px 0 35px 34%;
+  padding: 10px 0 35px 30%;
   margin-bottom: 35px;
 }
 
@@ -275,6 +292,10 @@ ul.steps-box li.step_checked p {
   margin: 0 5px;
 }
 
+:hover.btn_pag {
+  background: rgb(215, 100, 17);
+};
+
 .btn_pag_null {
   display: block;
   border-radius: 5px;
@@ -287,11 +308,15 @@ ul.steps-box li.step_checked p {
   margin: 0 5px;
 }
 
-
 .cancel {
   color: white;
   cursor: pointer;
   float: left;
   width: 100%;
   margin: 30px 0 10px 0;
+}
+
+ul li.required {
+  list-style: disc #333;
+  color: blue;
 }
