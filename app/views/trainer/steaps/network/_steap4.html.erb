@@ -40,10 +40,23 @@
 				<li> &#183; La hora asignada debe ser dentro del horario escolar del plantel. Un horario por la mañana y uno por la tarde según el turno. </li>
 			</ul>
 			<li>2) <b> Levantamiento de la Base de Datos:</b></li>
+			<ul class="space_buttons">
+			<li class="button btn-download"> 
+				<%= link_to 'Video Embed', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button" %></li>
+			<li class="button">
+				<%= link_to 'LINK AL VIDEO EN VIMEO', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
+			</li>
+
+			<li class="button">
+				<%= link_to 'Descarga del video', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
+			</li>
+		</ul>
+
+
+
 			<ul>
 				<li>&#183; En esta sección se descargará el formato que deberá ser llenado por la totalidad de los alumnos del plantel.
-				 <%= link_to '(Descarga formato XLSX)', '/bases_de_datos/bd_alumnos.xlsx', target: '_blank' %>
-			     <%= link_to '(Descarga formato  PDF)', '/bases_de_datos/bd_alumnos.pdf', target: '_blank'  %>
+				
 			     <center><%= image_tag('alumnos_ejemplo.png')%></center>
 				</li>
 				<li>&#183; Se debe replicar el formato de acuerdo al número de grupos con los que cuenta el plantel, es decir, si al momento de la fecha asignada existen 50 grupos tomando clase se deberán imprimir 50 juegos del formato de Base de Datos de la sección “a” de este paso. </li>

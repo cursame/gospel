@@ -3,6 +3,7 @@
   <p>Para comenzar a utilizar Cúrsame en tu institución, necesitas seguir al pie de la letra los siguientes pasos.
   </p>
 
-  <div class="big-box" id="steapsxputs"><%=render partial: "/trainer/steaps/#{session[:type]}/steap#{@steap}", locals: {steap_to: @to_steap , steap_preview: @prev_steap , preview_active: @preview_validate, to_active: @to_validate, total_steaps: @total_steaps }%>
+  <div class="big-box" id="steapsxputs">
+    <%=render partial: "/trainer/steaps/#{session[:type]}/steap#{@steap}", locals: {steap_to: @to_steap , steap_preview: @prev_steap , preview_active: @preview_validate, to_active: @to_validate, total_steaps: @total_steaps }%>
   </div>  
 </div>

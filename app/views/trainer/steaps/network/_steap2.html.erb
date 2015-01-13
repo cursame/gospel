@@ -31,20 +31,28 @@
 		<h1>Día 1</h1>
 		<p>Previamente hemos solicitado a las autoridades del plantel la Base de Datos de profesores de ambos turnos (en caso de que aplique) con el formato específico que Cúrsame necesita. 
 		</p>
-		<center><%= image_tag('profesores_ejemplo.png')%></center>
+       <div class="img_tutorial">
+				<%= image_tag('profesores_ejemplo.png')%>
+       </div>
 		<p>En caso de que el plantel no cuente con la Base de Datos, en esta sección podrán ser descargados los formatos ejemplo descargables para que hagan uso de ellos y completen el requisito.  </p>
 		<p>Una vez que la Institución cuente con la Base de Datos completa y con los datos correctos, deberá ser enviada al correo <%= mail_to "bd@cursa.me" %>  con el asunto “Base de Datos del Plantel Educativo <%=  "#{@user.network_name}"%>.”  con el fin de que Cúrsame habilite las cuentas de usuario para los profesores del plantel.</p>
 		<p>En cuanto las cuentas estén creadas los profesores recibirán un correo de confirmación en la cuenta que hayan especificado en el formato de Base de Datos, este correo les permitirá activar su cuenta de manera exitosa.</p>
 		<b>Profesores faltantes: </b>
 		<p>Siempre existirán caso en los que por diferentes razones un profesor no cuenta con usuario de Cúrsame ya que no llenó el formato de Base de Datos de Alumnos. Para que no pierda los beneficios del uso de nuestra plataforma el registro de profesores está habilitado de manera permanente en el sitio Cúrsame del plantel en la siguiente direccion URL <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %>.</p>
 		<p>También está habilitado desde la sección de administración de la plataforma para las autoridades la creación de nuevas cuentas para alumnos.</p>
-		<div class="buttons_space">
-			<%= link_to '(Descarga formato XLSX)', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button  btn-download" %>
-			<%= link_to '(Descarga formato  PDF)', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "button  btn-download" %>
-		</div>
-		</p>
+
+		<ul class="space_buttons">
+			<li class="button btn-download"> 
+				<%= link_to 'Descarga formato XLSX', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button" %></li>
+			<li class="button">
+				<%= link_to 'Descarga formato  PDF', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
+			</li>
+		</ul>
+
 		<div class="pagination">
-			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+			<ul class="space_buttons">
+				<li> <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+				</li>
+			</ul>
 		</div>
 	</div>
-</div>
