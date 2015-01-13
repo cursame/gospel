@@ -1,7 +1,8 @@
 <div class="content">
 
-<%= form_tag(logginadmin_path) do -%>
-  <%= text_field_tag 'l', '', placeholder: 'code'%>
-  <%= submit_tag %> 
+<%= form_tag(session_create_path) do -%>
+  <%= text_field_tag 'email', '', placeholder: 'email'%>
+  <%= password_field_tag 'password','', placeholder: 'Password' %>
+  <%= submit_tag 'ingresar'%> 
 <%end%>
 </div>

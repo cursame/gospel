@@ -30,6 +30,8 @@ group :production do
 	gem 'rails_12factor'
 end
 
+gem 'will_paginate', '~> 3.0.6'
+
 group :development, :test do
   gem "sqlite3-ruby", :require => "sqlite3"
 end

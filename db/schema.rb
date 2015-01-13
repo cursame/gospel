@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150107164420) do
+ActiveRecord::Schema.define(version: 20150112231122) do
 
   create_table "networks", force: true do |t|
     t.string   "token_network"
@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20150107164420) do
     t.date   "session_date"
   end
 
+  create_table "user_admins", force: true do |t|
+    t.string   "email"
+    t.string   "password"
+    t.string   "salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email"
     t.string   "role"
@@ -39,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150107164420) do
     t.datetime "updated_at"
     t.integer  "steap"
     t.boolean  "finish_training", default: false
+    t.string   "subdomain",       default: "demo"
   end
 
 end
