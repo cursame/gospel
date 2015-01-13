@@ -222,6 +222,10 @@ ul.space_buttons li.button a {
 }
 
 
+:hover ul.space_buttons li.button a {
+  background: gray;
+};
+
 
 .btn-download2 {
   text-align: center;
