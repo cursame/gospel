@@ -391,6 +391,7 @@ progress[value]::-webkit-progress-value::before {
 table{
   border: none;
   width: 100%;
+  border-collapse: collapse;
 }
 
 tbody tr:nth-child(odd) {
