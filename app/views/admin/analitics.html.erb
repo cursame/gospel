@@ -1,33 +1,60 @@
 <div class="content">
-	<div>
-		<h1>Progreso de la Plataforma</h1>
+	<h1>Progreso de la Plataforma</h1>
+	<%= @progress.to_i %>% <%= link_to "de usuarios implementados", users_path %>
+	<div class="bar">
 		<progress max="100" value="<%= @progress.to_i %>" ></progress>
-		<%= @progress.to_i %>% <%= link_to "de usuarios implementados", users_path %>
 	</div>
-	<div>
-		<h1>Progreso de la Plataforma</h1>
+	<%= @net_progress.to_i %>% 
+	<%= link_to "de redes implementadas", networks_path %>
+	<div class="bar">
 		<progress max="100" value="<%= @net_progress.to_i %>" ></progress>
-		<%= @net_progress.to_i %>% <%= link_to "de redes implementadas", networks_path %>
 	</div>
-	<h1>Progresos de la plataforma</h1>
+
 	<div id="content_data" class="square_contents">		
-		<div class="square color_green">
-			<div class="text_insquare"> Usuarios Totales <%= @total_user %></div>
-		</div>
-		<div class="square color_purple">
-			<div class="text_insquare" >Redes Totales <%= @total_networks %></div>
-		</div>
 		<div class="square color_blue">
-			<div class="text_insquare" >Usuarios que terminaron el entrenamiento <%= @user_finish_training %></div>
+			<div class="i_square">
+				<h3> <%= image_tag('1.png')%> <%= @total_user %> </h3>
+			</div>
+			<div class="text_insquare">
+				Usuarios 
+			</div>
 		</div>
-		<div class="square color_orange">
-			<div class="text_insquare" >Redes que terminaron el entrenamiento <%= @network_finish_training %></div>
+		<div class="square color_green">
+					<div class="i_square">
+				<h3> <%= image_tag('3.png')%> <%= @user_finish_training %> </h3>
+			</div>
+			<div class="text_insquare" >Con entrenamiento terminado
+			</div>
 		</div>
-		<div class="square color_gray_purple">
-			<div class="text_insquare" >Usuarios que no Terminarion el entrenamiento <%= @user_no_finish_training %></div>
+ 		<div class="square color_blue ">
+ 					<div class="i_square">
+				<h3> <%= image_tag('4.png')%> <%= @user_no_finish_training %> </h3>
+			</div>
+			<div class="text_insquare" >Con entrenamiento incompleto </div>
 		</div>
-		<div class="square color_gray_red">
-			<div class="text_insquare" >Redes que no terminaron el entrenamiento<%= @network_no_finish_training %></div>
+		<div class="square color_green">
+					<div class="i_square">
+				<h3> <%= image_tag('2.png')%> <%= @total_networks %> </h3>
+			</div>
+			<div class="text_insquare" >
+				Redes 
+			</div>
+		</div>
+		<div class="square color_blue ">
+					<div class="i_square">
+				<h3> <%= image_tag('3.png')%>  <%= @network_finish_training %> </h3>
+			</div>
+			<div class="text_insquare" >
+			  Entrenamiento terminado
+			</div>
+		</div>
+		<div class="square color_green">
+			<div class="i_square">
+				<h3> <%= image_tag('4.png')%> <%= @network_no_finish_training %> </h3>
+			</div>
+			<div class="text_insquare" >
+				Entrenamiento incompleto
+			</div>
 		</div>
 	</div>
 

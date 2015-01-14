@@ -22,7 +22,7 @@ $(document).ready(function(){
    	setTimeout(function(){ $('.notice').hide(); }, 3000);
    }
 
-   var width_square = $('.square').width();
-   $('.square').height(width_square);
+//   var width_square = $('.square').width();
+// $('.square').height(width_square);
 });
 
