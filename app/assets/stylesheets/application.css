@@ -391,6 +391,7 @@ progress[value]::-webkit-progress-value::before {
 table{
   border: none;
   width: 100%;
+  border-collapse: collapse;
 }
 
 tbody tr:nth-child(odd) {
@@ -412,7 +413,7 @@ td {
   border-right: 1px solid #dadada;
 }
 
-.button {
+.btn-new {
   display: block;
   background: rgb(126, 187, 37);
   border: 1px rgb(86, 165, 78) solid;
