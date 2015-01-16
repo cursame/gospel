@@ -201,8 +201,7 @@ ul.space_buttons{
   margin: 0;
 }
 
-ul.space_buttons li.
- {
+ul.space_buttons li{
   display: inline-block;
   list-style: none;
   margin-left: 5%;
