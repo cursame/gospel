@@ -1,7 +1,15 @@
 <div class="content">
-  <%= form_tag(create_admin_path) do -%>
-  <%= text_field_tag 'email', '', placeholder: :email %>
-  <%= password_field_tag 'password', '', placeholder: :password%>
-  <%= submit_tag 'Crear usuario'%>
-  <% end %>
+
+<h1 class="blue">Crear nuevo administrador</h1>
+<p>Ingresa el correo electrónico y asigna una contraseña al usuario que deseas crear</p>
+
+  <div class="loginbox">
+    <%= form_tag(create_admin_path) do -%>
+    <label class="logintext">Correo electrónico</label>
+    <%= text_field_tag 'email', '', placeholder: :email %>
+    <label class="logintext">Contraseña</label>
+    <%= password_field_tag 'password', '', placeholder: :password%>
+    <%= submit_tag 'Crear usuario', class:'btn-new'%>
+    <% end %>
+  </div>
 </div>

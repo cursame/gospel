@@ -1,22 +1,22 @@
-
 <ul class="menu">
-
-<li>
-<h2>Ingresa como usuario</h2></li>
-<%= form_tag("/trainer/follow") do -%>
-<li>
-  <div class="data">
-    <div class="input">
-      <%= text_field_tag 'code', '', placeholder: 'Ingresa tu email', class:'uno'%>
-    </div>
-    <div class="submit">
-       <%= submit_tag 'Enviar email', :class => 'button' %>
-    </div>
-    <%end%>
-  </div>
+  <li>
+    <h2>Ingresa como usuario</h2>
   </li>
-  <div onclick="celarMenu();" class="cancel">
-    Cancelar
-  </div>
-
-  </ul>
+    <%= form_tag("/trainer/follow") do -%>
+  <li>
+    <div class="data">
+      <div class="input">
+        <%= text_field_tag 'code', '', placeholder: 'Ingresa tu email', class:'uno'%>
+      </div>
+      <div class="btn-submit">
+        <%= submit_tag 'Enviar email', :class => 'btn-outline' %>
+      </div>
+      <%end%>
+    </div>
+  </li>
+  <li>
+    <div onclick="celarMenu();" class="cancel">
+      Cancelar
+    </div>
+  </li>
+</ul>

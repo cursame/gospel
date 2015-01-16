@@ -26,7 +26,7 @@ ul.menu h2 {
   font-weight: bold; 
   font-size: 16px;
   color: white;
-  line-height: 16px;
+  line-height: 20px;
 }
 
 h3 {
@@ -52,7 +52,7 @@ a {
   height: 100%;
 }
 
-input.uno{
+input {
   padding: 8px 10px;
   font-size: 15px;
   border-radius: 3px;
@@ -201,7 +201,8 @@ ul.space_buttons{
   margin: 0;
 }
 
-ul.space_buttons li.button {
+ul.space_buttons li.
+ {
   display: inline-block;
   list-style: none;
   margin-left: 5%;
@@ -222,26 +223,89 @@ ul.space_buttons li.button a {
   border: 1px solid #198BAD;
 }
 
-:hover ul.space_buttons li.button a {
-  background: gray;
-};
+ul.space_buttons li.button a.btn-embed {
+  display: block;
+  margin-right: 15px;
+  text-decoration: none; 
+  font-size: 15px;
+  color: rgb(255,255,255);
+  line-height: 10px;
+  padding:18px;
+  background: #DADADA;
+  border-radius: 3px;
+  border: 1px solid #ccc; 
+  width: auto;
+  float: left;
+}
 
 
-.btn-download2 {
+ul.space_buttons li.button a.btn-download {
+  padding: 18px;
+  color: white;
   text-align: center;
   display: block;
-  background: #109CC5;
-  border: 1pt #2677B2 solid;
+  background: black;
+  border: 1pt #ccc solid;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+  width: auto;
+}
+
+.btn {
+  padding: 25px; 
+} 
+
+.btn-new {
+  display: block;
+  background: rgb(126, 187, 37);
+  border: 1px rgb(86, 165, 78) solid;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+:hover.btn-outline {
+  background: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,1);
+}
+
+.btn-submit {
+  float: left;
+  width: 100%;
+}
+
+.btn-download {
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  display: block;
+  background: #5BAD3F;
+  border: 1pt #448C2C solid;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-right: 10px;
+  width: 30%;
+  float: left;
 }
 
 :hover.btn-download {
-  display: block;
-  background: #0E69A1;
-  border-radius: 3px;
+  background: #448652;
+  border: 1pt #5BAD3F solid;
 }
 
 .notice {
@@ -265,13 +329,10 @@ ul.space_buttons li.button a {
   float: left;
 }
 
-.submit {
-  float: left;
-  width: 100%;
-}
-
 .buttons_space {
-  margin:55px 5px;
+  width: 100%;
+  margin:35px 5px 55px 5px;
+  text-align: center;
 }
 
 .pagination {
@@ -319,7 +380,7 @@ ul.space_buttons li.button a {
 }
 
 ul li.required {
-  list-style: disc #000;
+  list-style: none;
   color: blue;
 }
 
@@ -335,23 +396,18 @@ progress[value]::-webkit-progress-bar {
 
 progress[value] {
   -webkit-appearance: none;
-   appearance: none;
-
+  appearance: none;
   width: 96%;
   height: 12px;
 }
 
 progress[value]::-webkit-progress-value {
   background-image:
-     -webkit-linear-gradient(-45deg, 
-                             transparent 23%, rgba(255, 255, 255, .17) 13%, 
-                             rgba(0,0,0,.02) 50%, transparent 3%),
-     -webkit-linear-gradient(top, 
-                             rgba(255, 255, 255, .1), 
-                             rgba(0, 0, 0, .1)),
-     -webkit-linear-gradient(left, #09c, #8adaff);
-    border-radius:2px; 
-    background-size:55px 20px, 100% 100%, 100% 100%;
+  -webkit-linear-gradient(-45deg, transparent 23%, rgba(255, 255, 255, .17) 13%, rgba(0,0,0,.02) 50%, transparent 3%),
+  -webkit-linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .1)),
+  -webkit-linear-gradient(left, #09c, #8adaff);
+  border-radius:2px; 
+  background-size:55px 20px, 100% 100%, 100% 100%;
 }
 
 progress[value]::-webkit-progress-value::before {
@@ -413,15 +469,17 @@ td {
   border-right: 1px solid #dadada;
 }
 
-.btn-new {
-  display: block;
-  background: rgb(126, 187, 37);
-  border: 1px rgb(86, 165, 78) solid;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  width: 20%;
-  color: white;
-  border-radius: 3px;
+li.sub {
+  margin-top: 35px;
+  font-weight: bold;
+}
+.loginbox {
+  background: white;
+  padding: 5%;
+  width: 90%;
+}
+
+label.logintext  {
+  color: gray;
   margin-bottom: 30px;
 }

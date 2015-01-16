@@ -4,7 +4,7 @@
 			Paso 3
 		</div>
 		<div class="subtitle">
-			<h3>Implementación a Profesores </h3>
+			<h3>Implementación a Profesores</h3>
 		</div>
 		<ul class="steps-box">
 			<li id="admin_1_checked" class="step_checked step1">
@@ -32,29 +32,28 @@
 		<p>Será necesario asignar las fechas de implementación para los docentes. </p>
 		<p>Nosotros proponemos de acuerdo a la cantidad de docentes, que se asignen 2 fechas en días consecutivos, mismos que se dividirán en sesiones de capacitación con duración aproximada de 50 minutos por sesión. Es importante que se realicen cuantas sesiones sean necesarias de acuerdo al cupo del aula de cómputo en la que se llevará a cabo la implementación con el fin de que todos los profesores queden cubiertos en las fechas asignadas.</p>
 		<p>El programa sugerido para las sesiones de implementación es el siguiente:</p>
-		<b>Bienvenida a profesores:</b>
+		Bienvenida a profesores:
 		<p>Proporcionamos un flyer que podrá ser descargado y replicado para los profesores, es un importante material de apoyo para la sesión. (DESCARGA DEL FLYER)</p>
-		<b>Introducción:</b>
+		Introducción:
 		<p>En esta sección verán un video introductorio de Cúrsame que tiene una duración de 1.57 minutos
-		<ul class="space_buttons">
-			<li class="button btn-download"> 
-				<%= link_to 'Video Embed', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button" %></li>
-			<li class="button">
-				<%= link_to 'LINK AL VIDEO EN VIMEO', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
-			</li>
-
-			<li class="button">
-				<%= link_to 'Descarga del video', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
-			</li>
-		</ul>
-		<center>
-		<iframe width="760" height="515" src="http://www.youtube.com/embed/hRXdl0MHKoY" frameborder="0" allowfullscreen></iframe>
-		</center>
-		<b>Sesión Interactiva:</b>
+				<ul class="space_buttons">
+					<li class="button"> 
+						<%= link_to 'Video Embed', '#', class:'btn-embed'%>
+					</li>
+					<li class="button">
+						<%= link_to 'Vimeo', '#', target: '_blank', class:'btn-download'%>
+					</li>
+					<li class="button">
+						<%= link_to 'Descarga del video', '#', target: '_blank', class:'btn-download'%>
+					</li>
+				</ul>
+				<iframe width="760" height="515" src="http://www.youtube.com/embed/hRXdl0MHKoY" frameborder="0" allowfullscreen></iframe>
+		Sesión Interactiva:
 		<p>Al terminar el video introductorio aprovechando el aula de cómputo cada profesor llevará a cabo frente a la computadora un ejercicio tutorial que consta de 8 pasos y que le permitirá familiarizarse con sus herramientas de trabajo en Cúrsame.  </p>
 		<p>En caso de no contar con aula de cómputo con internet o no haya computadoras disponibles se deberá proporcionar a los profesores el link URL del tutorial para que lo realicen posteriormente en sus domicilios o café internet.
-		(LINK DEL TUTORIAL)</p>
-		<b>Reconocimiento de conclusión de la capacitación en Cúrsame:</b>
+		<a href="">link de tutorial</a></p>
+
+		Reconocimiento de conclusión de la capacitación en Cúrsame:
 		<p>Una vez que el profesor termina la sesión interactiva de implementación se habilita una opción para solicitar a Cúrsame un diploma como profesor calificado para el uso de nuestra plataforma educativa. Este diploma será personalizado y firmado por el CEO de Cúrsame, se le hará llegar de manera digitalizada a la cuenta de correo electrónico especificada al momento de inscripción a Cúrsame.</p>
 		<p>Las autoridades escolares pueden solicitar una implementación remota con uno de nuestros agentes, para ello deberán escribir al correo <%= mail_to "implementaciones@cursa.me" %>” con el fin de  establecer fechas y condiciones ya que se considera un servicio extra al paquete estándar de Cúrsame. </p>
 		<div class="pagination">

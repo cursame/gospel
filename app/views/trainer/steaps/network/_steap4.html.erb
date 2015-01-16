@@ -29,52 +29,51 @@
 	</div>
 	<div class="box-content">
 		<h1>Día 4</h1>
-		<p>
-		Una vez que hayan concluido las sesiones de implementación con los profesores, el plantel está listo para dar de alta al total de la matrícula de alumnos que serán beneficiados por Cúrsame.
+		<p>Una vez que hayan concluido las sesiones de implementación con los profesores, el plantel está listo para dar de alta al total de la matrícula de alumnos que serán beneficiados por Cúrsame.
 		</p>
 		<p>Con el fin de obtener dicha Base de Datos en un solo esfuerzo de logística por turno Cúrsame sugiere el siguiente proceso:</p>
-		<ul>
-			<li>1) <b>Definir fecha y horario para el levantamiento de la Base de Datos.</b></li>
-			<ul>
-				<li> &#183; Esta fecha debe ser al día hábil siguiente de la finalización el Paso 3. </li>
-				<li> &#183; La hora asignada debe ser dentro del horario escolar del plantel. Un horario por la mañana y uno por la tarde según el turno. </li>
-			</ul>
-			<li>2) <b> Levantamiento de la Base de Datos:</b></li>
-			<ul class="space_buttons">
-			<li class="button btn-download"> 
-				<%= link_to 'Video Embed', '/bases_de_datos/bd_profesores.xlsx', target: '_blank' , class: "button" %></li>
-			<li class="button">
-				<%= link_to 'LINK AL VIDEO EN VIMEO', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
+
+		<ol >
+			<li class="sub">Definir fecha y horario para el levantamiento de la Base de Datos.</li>
+				<p> Esta fecha debe ser al día hábil siguiente de la finalización el Paso 3.</p> 
+				<p>La hora asignada debe ser dentro del horario escolar del plantel.</p>
+				<p>Un horario por la mañana y uno por la tarde según el turno. </p>
+			<li class="sub">Levantamiento de la Base de Datos</li>
+				<ul class="space_buttons">
+					<li class="button"> 
+						<%= link_to 'Video Embed', '#', class:'btn-embed'%>
+					</li>
+					<li class="button">
+						<%= link_to 'Vimeo', '#', target: '_blank', class:'btn-download'%>
+					</li>
+					<li class="button">
+						<%= link_to 'Descarga del video', '#', target: '_blank', class:'btn-download'%>
+					</li>
+				</ul>
+				 <p>En esta sección se descargará el formato que deberá ser llenado por la totalidad de los alumnos del plantel.</p>
+        <div class="img_tutorial">
+				  <%= image_tag('alumnos_ejemplo.png')%>
+        </div>
+
+				<p>Se debe replicar el formato de acuerdo al número de grupos con los que cuenta el plantel, es decir, si al momento de la fecha asignada existen 50 grupos tomando clase se deberán imprimir 50 juegos del formato de Base de Datos de la sección “a” de este paso.</p>
+				<p>
+				Una vez que se tienen la cantidad exacta de formatos de Base de Datos para los grupos escolares, el personal del plantel deberá repartirlos a todos los grupos dentro de la hora especificada por los administrativos con el fin de obtener la totalidad de las Base de Datos en un solo esfuerzo y evitando la duplicación de registros en Cúrsame. </p>
+				<p>Al término de la hora asignada, se debe recoger el formato asegurándose de que este haya sido llenado por los la totalidad de alumnos y con los datos correctos para la creación de sus cuentas. Esto es muy importante ya que de lo contrario puede ocasionar problemas en la creación de usuarios de algunos alumnos o la falta de asignación de usuario para los mismos dentro de Cúrsame.</p>
+
+			<li class="sub" >
+				Envío de la Base de Datos:
 			</li>
-
-			<li class="button">
-				<%= link_to 'Descarga del video', '/bases_de_datos/bd_profesores.pdf', target: '_blank' , class: "" %>
-			</li>
-		</ul>
-
-
-
-			<ul>
-				<li>&#183; En esta sección se descargará el formato que deberá ser llenado por la totalidad de los alumnos del plantel.
-				
-			     <center><%= image_tag('alumnos_ejemplo.png')%></center>
-				</li>
-				<li>&#183; Se debe replicar el formato de acuerdo al número de grupos con los que cuenta el plantel, es decir, si al momento de la fecha asignada existen 50 grupos tomando clase se deberán imprimir 50 juegos del formato de Base de Datos de la sección “a” de este paso. </li>
-				<li>&#183; Una vez que se tienen la cantidad exacta de formatos de Base de Datos para los grupos escolares, el personal del plantel deberá repartirlos a todos los grupos dentro de la hora especificada por los administrativos con el fin de obtener la totalidad de las Base de Datos en un solo esfuerzo y evitando la duplicación de registros en Cúrsame. </li>
-				<li>&#183; Al término de la hora asignada, se debe recoger el formato asegurándose de que este haya sido llenado por los la totalidad de alumnos y con los datos correctos para la creación de sus cuentas. Esto es muy importante ya que de lo contrario puede ocasionar problemas en la creación de usuarios de algunos alumnos o la falta de asignación de usuario para los mismos dentro de Cúrsame.</li>
-			</ul>
-			<li>3)<b> Envío de la Base de Datos: </b></li>
 			<ul>
 				<li>Los formatos deberán ser digitalizados y enviados al correo <%= mail_to "bd@cursa.me" %> con el asunto “Base de Datos de Alumnos del Plantel Educativo <%=  "#{@user.network_name}"%>.”  con el fin de que Cúrsame habilite las cuentas de usuario para los alumnos del plantel.</li>
 				<li>En cuanto las cuentas estén creadas los alumnos recibirán un correo de confirmación en la cuenta que hayan especificado en el formato de Base de Datos, este correo les permitirá activar su cuenta de manera exitosa.
 				</li>
 			</ul>
-			<li>4) <b>Alumnos faltantes:</b> </li>
+			<li class="sub">Alumnos faltantes </li>
 			<ul>
 				<li>Siempre existirán caso en los que por diferentes razones un alumno no cuenta con usuario de Cúrsame ya que no llenó el formato de Base de Datos de Alumnos. Para que no pierda los beneficios del uso de nuestra plataforma el registro de alumnos está habilitado de manera permanente en el sitio Cúrsame del plantel.  </li>
 				<li> También está habilitado desde la sección de administración de la plataforma para las autoridades la creación de nuevas cuentas para alumnos. </li>
 			</ul>
-		</ul>
+		</ol>
 		<div class="pagination">
 			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
 		</div>
