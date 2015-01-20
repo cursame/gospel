@@ -100,15 +100,25 @@ class TrainerController < ApplicationController
     @user = User.find(session[:identifier])
     else
     @user = Network.find(session[:identifier])
+    @network = true
     end
-
-    @user.steap = params[:steap]
-    if @user.steap.to_i == params[:total_steaps].to_i
-      @user.finish_training = true
-    end
-    @user.save
     @steap = params[:steap]
     @total_steaps = params[:total_steaps]
+
+    if @network
+
+     @user.update_attributes(steap:  @steap.to_i)
+     if @user.steap.to_i == @total_steaps.to_i
+       @user.update_attributes(finish_training: true)
+     end
+
+    else
+      @user.steap = @steap.to_i
+      if @user.steap.to_i == @total_steaps.to_i
+         @user.finish_training = true
+      end
+      @user.save
+    end
     
     @prev_steap = @steap.to_i - 1
     @to_steap = @steap.to_i + 1

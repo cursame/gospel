@@ -44,6 +44,15 @@
 				  <%= image_tag('alumnos_ejemplo.png')%>
         </div>
 
+        <ul class="space_buttons">
+			<li class="button"> 
+				<%= link_to 'Descarga formato XLSX Alumnos', '/bases_de_datos/bd_alumnos.xlsx', target: '_blank' %></li>
+			<li class="button">
+				<%= link_to 'Descarga formato  PDF Alumnos', '/bases_de_datos/bd_alumnos.pdf', target: '_blank' %>
+			</li>
+		</ul>
+
+
 				<p>Se debe replicar el formato de acuerdo al número de grupos con los que cuenta el plantel, es decir, si al momento de la fecha asignada existen 50 grupos tomando clase se deberán imprimir 50 juegos del formato de Base de Datos de la sección “a” de este paso.</p>
 				<p>
 				Una vez que se tienen la cantidad exacta de formatos de Base de Datos para los grupos escolares, el personal del plantel deberá repartirlos a todos los grupos dentro de la hora especificada por los administrativos con el fin de obtener la totalidad de las Base de Datos en un solo esfuerzo y evitando la duplicación de registros en Cúrsame. </p>
