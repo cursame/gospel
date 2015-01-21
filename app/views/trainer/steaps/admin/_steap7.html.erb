@@ -1,0 +1,62 @@
+<div id="admin_6_step">
+  <div class="header">
+    <div class="title">
+      Paso 6
+    </div>
+    <div class="subtitle">
+      <h3>Radar escolar</h3>
+    </div>
+    <ul class="steps-box">
+      <li id="admin_1_checked" class="step_checked step1">
+        <p>1</p>
+      </li>
+      <li id="admin_2_checked" class="step_checked step2">
+        <p>2</p>
+      </li>
+      <li id="admin_3_checked" class="step_checked step3">
+        <p>3</p>
+      </li>
+      <li id="admin_4_checked" class="step_checked step4">
+        <p>4</p>
+      </li>
+      <li id="admin_5_checked" class="step_checked step5">
+        <p>5</p>
+      </li>
+      <li id="admin_6_checked" class="step_checked step6">
+        <p>6</p>
+      </li>
+      <li id="admin_7_checked" class="step_checked step6">
+        <p>7</p>
+      </li>
+    </ul>
+  </div>
+  <div class="box-content">
+    <b>Radar Escolar</b>
+    <p>Como usted es la persona a la que se le asignó el rol de administrador, se le ha dado acceso a RADAR en su institución, éste es un rol primordial en el esfuerzo del día a día a favor de la convivencia escolar por esta razón agradecemos su interés y disposición. </p>
+    <p>A continuación describiremos paso a paso como usar RADAR y sus principales funciones como administrador.
+    </p>
+    <p>1. En el menú de inicio de Cúrsame encontrará del lado izquierdo la opción de RADAR, debe dar click en ésta.</p>
+    <%= image_tag('botonradar.png')%>
+    <p>2. Usted puede ingresar en <%= link_to 'www.radarescolar.com','http://www.radarescolar.com', target: '_blank' %> al administrador de alertas de su red.</p>
+    <%= image_tag('imagenradar.png',  width:500)%>
+    <p>3. Usted debe solicitar el cambio de contraseña  <%= link_to 'aquí', 'http://www.radarescolar.com/mail_to_reconfirm_password?locale=es', target: '_blank'%>, recuede que el email que debe ingresar es el mismo email de administrador de Cúrsame.</p>
+    <%= image_tag('radarcontrasena.png',  width:500)%>
+    <p>4. Recibiras un correo en tu email, con la url para cambio de contraseña da click y cambia tu contraseña, recuarda revisar el SPAM </p>
+     <%= image_tag('radarchangepassword.png',  width:500)%></br></br>
+    <b>Funciones del administrador</b>
+      <ul>
+        <li>1) Recibir las denuncias de los alumnos en su institución</li>
+        <li>2) Podrá conocer en porcentaje el grado de violencia escolar de su institución</li>
+        <li>3) Enlace entre institución y experto. Cuando exista una denuncia que requiere  atención especial por su severidad o riesgo podrá contactar al especialista (asesor experto) y de esta persona podrá obtener orientación, información, atención o canalización dependiendo la valoración que hagan en conjunto.</li>
+        <li>4) Será función de la institución (directivos, maestros y alumnos) llevar a cabo actividades o proyectos de prevención contra la violencia escolar pudiendo solicitar apoyo a los asesores expertos.</li>
+        <li>5) Si tiene alguna duda sobre el funcionamiento de RADAR puede contactar al tel 63632893 con un horario de 10 am a 6 pm.</li>
+
+      </ul>
+      <center>
+      <%= image_tag('radarescolarhome.png',  width:800)%></br></br>
+      </center>
+    </div>
+  <div class="pagination">
+    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+  </div>
+</div>

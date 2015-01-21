@@ -28,23 +28,26 @@
       <li class="step step7">
         <p>7</p>
       </li>
+      <li class="step step7">
+        <p>8</p>
+      </li>
     </ul>
   </div>
   <div class="box-content">
     <p>
-      Cúrsame integra una barra de recorcatorios que se encontrará en
-      la parte derecha de la pantalla. Esta barra es muy importante ya
-      que le permite, tanto al maestro como al alumno, estar al tanto de
-      las actividades que tenga pendientes por contestar. 
+    Cúrsame integra una barra de recorcatorios que se encontrará en
+    la parte derecha de la pantalla. Esta barra es muy importante ya
+    que le permite, tanto al maestro como al alumno, estar al tanto de
+    las actividades que tenga pendientes por contestar.
     </p>
     <p>
-      La barra toma la información de las actividades pendientes de los próximos 3 días y nos despliega la información de estas actividades.
+    La barra toma la información de las actividades pendientes de los próximos 3 días y nos despliega la información de estas actividades.
     </p>
     <div class="img_tutorial">
       <%=  image_tag('img_al9.png')%>
     </div>
   </div>
   <div class="pagination">
-  <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
   </div>
 </div>

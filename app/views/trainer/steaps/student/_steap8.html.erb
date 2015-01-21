@@ -1,0 +1,53 @@
+<div id="admin_7_step">
+  <div class="header">
+    <div class="title">
+      Paso 8
+    </div>
+    <div class="subtitle">
+      <h3>Radar Escolar</h3>
+    </div>
+    <ul class="steps-box">
+      <li id="admin_1_checked" class="step_checked step1">
+        <p>1</p>
+      </li>
+      <li id="admin_2_checked" class="step_checked step2">
+        <p>2</p>
+      </li>
+      <li id="admin_3_checked" class="step_checked step3">
+        <p>3</p>
+      </li>
+      <li id="admin_4_checked" class="step_checked step4">
+        <p>4</p>
+      </li>
+      <li id="admin_5_checked" class="step_checked step5">
+        <p>5</p>
+      </li>
+      <li id="admin_6_checked" class="step_checked step6">
+        <p>6</p>
+      </li>
+      <li id="admin_7_checked" class="step_checked step7">
+        <p>7</p>
+      </li>
+      <li id="admin_8_checked" class="step_checked step7">
+        <p>8</p>
+      </li>
+    </ul>
+  </div>
+  <div class="box-content">
+    <p>
+    </br>
+    <i>Estimado (a) estudiante</i></br></br>
+    <p>En esta guía te mostraremos paso a paso la manera en que puedes utilizar la herramienta RADAR, ésta es una herramienta con la que puedes hacer denuncias confidenciales si tú has sido víctima de violencia o si has sido testigo de violencia escolar.</p></br></br>
+    <b>Pasos para utilizar RADAR.</b></br></br>
+    <p>1. En el menú de inicio de Cúrsame podrás encontrar la herramienta RADAR.
+    </p></br>
+    <%= image_tag('botonradar.png')%>
+    <p>2. Encontraras dos pestañas en la parte superior, una para víctima y otra como testigo, puedes dar click dependiendo el tipo de denuncia que quieras hacer (si tu quieres denunciar alguna situaciones que te hayan pasado da click en la pestaña de denuncia personal o si prefieres denunciar alguna situación que tu hayas visto en la que agreden a alguno de tus compañeros (as) da click en la pestaña testigo.</p></br>
+    <%= image_tag('radartabs.png')%>
+    <p>3. Al dar click en la pestaña de testigo o víctima aparecerá un cuestionario para cada uno. Pon tu nombre y correo en la parte superior del cuestionario y ahora puedes elegir las preguntas que apliquen en tu caso o en el caso de algún compañero o compañera que ha sido violentado de alguna manera. Recuerda que es confidencial esto quiere decir que tu nombre y el dato de tu correo está resguardado y no se mostrarás.</p></br>
+    </p>
+  </div>
+  <div class="pagination">
+    <%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
+  </div>
+</div>

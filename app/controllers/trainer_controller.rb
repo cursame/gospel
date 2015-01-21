@@ -36,7 +36,7 @@ class TrainerController < ApplicationController
   def admin
     @user = User.find(session[:identifier])
     @steap = @user.steap
-    @total_steaps = 6
+    @total_steaps = 7
     @prev_steap = @steap.to_i - 1
     @to_steap = @steap.to_i + 1
 
@@ -58,7 +58,7 @@ class TrainerController < ApplicationController
   def teacher
     @user = User.find(session[:identifier])
     @steap = @user.steap
-    @total_steaps = 7
+    @total_steaps = 8
     @prev_steap = @steap.to_i - 1
     @to_steap = @steap.to_i + 1
 
@@ -78,7 +78,7 @@ class TrainerController < ApplicationController
   def student
     @user = User.find(session[:identifier])
     @steap = @user.steap
-    @total_steaps = 7
+    @total_steaps = 8
     @prev_steap = @steap.to_i - 1
     @to_steap = @steap.to_i + 1
 

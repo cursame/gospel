@@ -7,9 +7,9 @@ class User < ActiveRecord::Base
 	def acomplishment_steaps
 		case self.role 
 		when 'student'
-			@s = 7
+			@s = 8
 		when 'teacher'
-			@s = 6
+			@s = 8
 		when 'admin'
 			@s = 7
 		end
