@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
 			@s = 8
 		when 'admin'
 			@s = 7
+		else
+			@s = 1
 		end 
 		    if self.steap == 0
 		    	self.steap = 1
