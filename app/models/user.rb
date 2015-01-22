@@ -12,9 +12,16 @@ class User < ActiveRecord::Base
 			@s = 8
 		when 'admin'
 			@s = 7
-		end
+		end 
+		    if self.steap == 0
+		    	self.steap = 1
+		    	self.save
+		    	@c = (self.steap.to_f/@s.to_f)*100
+			    @c.to_i
+		    else
 			@c = (self.steap.to_f/@s.to_f)*100
 			@c.to_i
+		    end
 	end
 
 
