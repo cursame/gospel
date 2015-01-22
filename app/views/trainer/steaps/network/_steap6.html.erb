@@ -4,7 +4,7 @@
 			Paso 6
 		</div>
 		<div class="subtitle">
-			<h3>Has finalizado  </h3>
+			<h3>Radar Escolar  </h3>
 		</div>
 		<ul class="steps-box">
 			<li id="admin_1_checked" class="step_checked step1">
@@ -25,12 +25,37 @@
 			<li class="step_checked step6">
 				<p>6</p>
 			</li>
+			<li class="step step6">
+				<p>7</p>
+			</li>
 		</ul>
 	</div>
 	<div class="box-content">
-		<p>¡Felicidades! Tu plantel está listo para comenzar a disfrutar de los beneficios de la plataforma educativa Cúrsame. </p>
-		<p>Toda la información que encontraste en este sistema de implementación automatizada podrá ser consultada cuantas veces sea necesario siempre que lo necesites.</p>
-		Además contamos con el servicio de soporte en línea con horario de 10 am a 6 pm en esta dirección <%= link_to "#{@user.subdomain}.cursa.me","http://#{@user.subdomain}.cursa.me", target: '_blank' %> y en los teléfonos <a href="tel:63855560"> Tel:63855560 </a>
+		<p>RADAR (Recurso  Antibullying de Diagnóstico Análisis y Reporte) es una herramienta dentro de cúrsame, esta herramienta se construyó para apoyar acciones contra la violencia escolar.</p>
+		<p>En Cúrsame reconocemos la necesidad de participar en acciones contra la violencia escolar pues consideramos que para que los alumnos interactúen con otros con un fin educativo a través de nuestra plataforma, se requiere un ambiente de convivencia positiva para que se pueda dar el proceso de aprendizaje colaborativo de la manera más integral posible.</p>
+		<p><b>¿Qué se puede hacer a través de RADAR?</b></p>
+		<p>- Denunciar de manera confidencial ya sea como víctima o testigo, situaciones de violencia entre alumnos.</p>
+		<p>- Identificar casos de violencia en la escuela, sus formas y grado de severidad.</p>
+		<p>- Contactar con expertos en el tema de violencia escolar.</p>
+		<p><b>¿Cómo funciona?</b></p>
+		<p>1. Se proveen dos formularios en línea (uno para testigos y uno para víctimas) integrados en la plataforma de Cúrsame.</p>
+		<center>
+		<%= image_tag('radartabs.png', width: 800)%>
+		</center>
+		<p>2. A través de RADAR se detectan las formas y la severidad de los casos.</p>
+		<p>3. El directivo o persona asignada de la escuela recibe las alertas a su correo.</p>
+		<p>4. Si existe una situación de violencia severa y se detecta que el alumno está en riesgo la herramienta permite el contacto con un especialista.</p>
+		<center>
+		<%= image_tag('radarescolarhome.png', width: 800)%>
+		</center>
+		<p>5. La persona especialista provee de orientación, información, canalización o atención dependiendo la valoración del caso.</p>
+		<p>6. La escuela puede iniciar su plan de atención o prevención con apoyo del especialista.</p>
+		<p><b>Comenzar a usar RADAR</b></p>
+		<p>1. Para comenzar a usar radar es importante que se hayan concluido todos los pasos de la implementación automatizada de Cúrsame y ya estén inscritos todos los alumnos y maestros de la institución.</p>
+		<p>2. Se deberá designar alguna persona de la institución como administrador de RADAR, puede ser un directivo, maestro(a), psicólogo(a), orientador (a). esta persona designada será a la que le lleguen las alertas y la que tendrá contacto directo con los especialistas (asesores expertos). Para dar de alta a la persona es necesario que tengamos los siguientes datos: nombre, apellidos, correo electrónico, teléfono personal, cargo. El usuario designado mediante Cúrsame debe de ir al link de <%= link_to 'Cambiar contraseña', 'http://www.radarescolar.com/mail_to_reconfirm_password?locale=es', target: '_blank'%> y despúes de ingresar su mail de administrador de Cúrsame y así se enviará un mail a su correo para el cambio de contraseña.</p>
+		
+		<p>3. Una vez que se dio de alta el administrador de RADAR es importante llevar una campaña de concientización sobre la herramienta de RADAR, una opción es reunir a todos los alumnos y maestros de la institución (en un auditorio o aula)y explicarles lo que es RADAR y la importancia de tomar en serio la herramienta, comentar que debe de usarse de manera respetuosa, consiente y hacer hincapié en que las denuncias son confidenciales por lo que no deben preocuparse  además explicar que está respaldada por especialistas,  se les puede comentar que RADAR no es para  jugar o usar para bromear ya que del otro lado existen doctores, psicólogos, pedagogos que estarán al pendiente de los casos y ellos perderían su tiempo y se desperdiciaría su esfuerzo si se reciben denuncias falsas o en broma.</p>
+		<p>4. Una vez que la comunidad educativa (maestros y alumnos) tienen conocimiento de estos aspectos pueden en este mismo portal de capacitación ingresar a los tutoriales como alumno o maestro para que conozcan a detalle cómo funciona RADAR y como pueden llevar a cabo su denuncia confidencial.</p>
 		<div class="pagination">
 			<%= render partial: '/trainer/steaps/paginate', locals: {steap_to: steap_to, steap_preview: steap_preview, preview_active: preview_active, to_active:  to_active, total_steaps: total_steaps}%>
 		</div>

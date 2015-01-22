@@ -16,7 +16,7 @@ class TrainerController < ApplicationController
   def network
     @user = Network.find(session[:identifier])
     @steap = @user.steap
-    @total_steaps = 6
+    @total_steaps = 7
     @prev_steap = @steap.to_i - 1
     @to_steap = @steap.to_i + 1
 
