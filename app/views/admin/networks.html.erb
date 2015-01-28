@@ -22,7 +22,12 @@
 				</td>
 
 				<td>
+				 <% if network.finish_training == true %>
+				 <progress max="100" value="100" ></progress> 100%
+				 <%else%>
 				 <progress max="100" value="<%= network.acomplishment_steaps%>" ></progress> <%= network.acomplishment_steaps.to_i%>% 
+				 <%end%>
+
 				</td>
 				<td><%= network.token_network%></td>
 				<td><%= network.subdomain%></td>
