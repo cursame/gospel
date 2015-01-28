@@ -3,7 +3,7 @@ class RegisterApiController < ApplicationController
    def create_user
        # http://localhost:3000/create_user?email=alfredo@cursa.me&role=admin&network_name=Demo&type_network=free&token_secure=938592hhhf4hui23ui2bfbu5i5y
    	 if filter_token
-	   	 @user = User.create(email: params[:email], role: params[:role] , network_name: params[:network_name], type_network: params[:type_network])
+	   	 @user = User.create(email: params[:email], role: params[:role] , network_name: params[:network_name], type_network: params[:type_network], subdomain: params[:subdomain])
 	   	 if @user.save 
 	   	 	@notice = 'Usuario creado correctamente'
             session[:type] = 'user'
