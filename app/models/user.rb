@@ -1,9 +1,18 @@
 class User < ActiveRecord::Base
 	validates :email, presence: true, uniqueness: true
 	after_create do 
+
+		if  self.network_name == 'demo' 
+		 	self.user.subdomain  = user.network_name
+		end
+
+		if self.network_name == nil 
+			self.user.subdomain  = user.network_name
+		end
 		self.steap = 1
 		self.save
 	end
+
 	def acomplishment_steaps
 		case self.role 
 		when 'student'
