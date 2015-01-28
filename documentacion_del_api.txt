@@ -1,0 +1,62 @@
+Documentación del api de GOSPEL
+
+1) Creación de una red 
+ Para la creación de una red es necesario enviar los parametros mediante un link a la url "create_network", 
+ los parametros son:
+
+ - name
+ - subdomain
+ - token_secure
+
+ por ejemplo:
+
+ http://localhost:3000/create_network?name=version4&subdomain=version4&token_secure=938592hhhf4hui23ui2bfbu5i5y
+
+2) Creación de un usuario
+  Para la creación de un usuario es necesasrio enviar los siguientes parámetros a la ruta "create_user":
+
+  - email
+  - role
+  - network_name
+  - type_network (free, pro) -> con patrosinio o sin patrosinio 
+  - subdomain 
+  - token_secure
+
+  por ejemplo:
+
+ # http://localhost:3000/create_user?email=alfredo@cursa me&role=admin&network_name=Demo&type_network=free&subdomain=demo&token_secure=938592hhhf4hui23ui2bfbu5i5y
+
+  nota: al ser creado el usuario se da de alta una session en GOSPEL
+
+3) Ver si un usuario ha sido implementado
+
+  Para ver si un usuario ha sido implementado ya tenemos que enviar una petición a la url "user_implemented", esta raspondera un dato boleano "true" or "false", en caso de ser false, el usuario genera un session dentro de gospel que es un módulo de Cúrsame, esta session da como resultado la aparición de una notificación dentro de la aplicación, que puede estar en el memú lateral o puede aparecer en el light box.
+  
+  Con el mensaje:
+
+  "No has concluido tu implementación da click 'aqui' para concluir."
+
+  En el aqui debe de haber un link a la url http://capacitate.cursa.me/ en el cual ya ha sido creada la session del usuario.
+
+   Parametros: 
+
+   - email
+   - token_secure
+
+   Ejemplo:
+
+  # http://localhost:3000/user_implemented?email=alfredo@cursa.me&token_secure=938592hhhf4hui23ui2bfbu5i5y
+
+4) Guardar los ingresos de los usuarios
+
+  Para que se guarden los ingresos de los usuarios es necesario cada que se loguea un usuario mandar a la url  register_session los parametros.
+  
+  - email
+  - token_secure
+
+  Por ejemplo:
+
+  # http://localhost:3000/register_session?email=alfredo@cursa.me&token_secure=938592hhhf4hui23ui2bfbu5i5y
+
+
+  
