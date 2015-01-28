@@ -25,11 +25,11 @@ class AdminController < ApplicationController
 		end
 
 		def users
-			@users = User.paginate(:page => params[:page], :per_page => 20).order('id DESC')
+			@users = User.paginate(:page => params[:page], :per_page => 50).order('id DESC')
 		end
 
 		def networks
-			@networks = Network.paginate(:page => params[:page], :per_page => 20).order('id DESC')
+			@networks = Network.paginate(:page => params[:page], :per_page => 50).order('id DESC')
 		end
 
 		def create_admin
