@@ -1,4 +1,4 @@
-namespace :change_subdomain do
+task :change_subdomain do
 	@users = User.all
 	 @users.each do |user|
 		 if user.subdomain != user.network_name
